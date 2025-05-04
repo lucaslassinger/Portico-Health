@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portico Health, LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kNV+1eY6ZzX6F+Y0yF2cOQkPzZ1x3D1zN4hZ+hi4Aq+Jj6r83yTYzF4JVnLF1MGx1J3z0F6ujbBvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">
+      <img src="images/portico-health-logo.png" alt="Portico Health, LLC Logo" />
+    </div>
+    <!-- Hamburger Menu Toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#product">Problem</a></li>
+        <li><a href="#benefits">Solution</a></li>
+        <li><a href="mailto:info@portico-health.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Reimagining Cervical Laminoplasty</h1>
+      <p>A streamlined single-screw system for safe, efficient opening-wedge laminoplasty.</p>
+      <div class="buttons">
+        <a href="#product" class="btn">Learn More</a>
+        <a href="mailto:info@portico-health.com" class="btn outline">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/portico-health-device.png" alt="Portico Health, LLC single-screw device" />
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="product">
+    <h2>The Problem</h2>
+    <p class="section-intro">Cervical spinal stenosis affects up to 21% of the population, leading to prolonged procedures and variable outcomes.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>$1.46B+</h3>
+        <p>Global market for cervical spine implants</p>
+      </div>
+      <div class="card">
+        <h3>13,000</h3>
+        <p>New U.S. patients diagnosed with cervical myelopathy yearly</p>
+      </div>
+      <div class="card">
+        <h3>60%</h3>
+        <p>Amount of procedure time spent placing screws</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="benefits">
+    <h2>Our Solution</h2>
+    <p class="section-intro">Our single-screw laminoplasty system eases training, reduces OR time, and enhances surgical safety.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Precision</h3>
+        <p>Single-screw alignment for consistent opening.</p>
+      </div>
+      <div class="card">
+        <h3>Speed</h3>
+        <p>Faster setup and deployment in the OR.</p>
+      </div>
+      <div class="card">
+        <h3>Safety</h3>
+        <p>Built-in stop to prevent over-tightening.</p>
+      </div>
+    </div>
+    <div class="view-patent">
+      <a href="https://patents.google.com/patent/US20230338165A1" class="btn">View Patent</a>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Ready to Transform Spinal Care?</h2>
+      <p>Join us in revolutionizing laminoplasty procedures with our innovative, single-screw implant system.</p>
+      <div class="cta-buttons">
+        <a href="mailto:info@portico-health.com" class="cta-btn primary">
+          <i class="fas fa-envelope"></i>
+          Contact Us
+        </a>
+        <a href="https://www.linkedin.com/company/portico-health" class="cta-btn outline">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div>© 2025 Portico Health, LLC</div>
+    <nav>
+      <ul>
+        <li><a href="https://patents.google.com/patent/US20230338165A1">Patent</a></li>
+        <li><a href="mailto:info@portico-health.com">Contact</a></li>
+        <li><a href="https://www.linkedin.com/company/portico-health">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
