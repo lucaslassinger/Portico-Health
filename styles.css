@@ -1,0 +1,250 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 100;
+  }
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Hamburger Toggle */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .nav-toggle {
+      display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #fff;
+      width: 200px;
+      border: 1px solid #eee;
+      border-radius: 0.5rem;
+      transform: translateY(-20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .navbar.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .navbar ul {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+  
+  /* Hero & Solution Section Gradients */
+  #hero, #benefits {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  }
+  
+  /* Hero */
+  #hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  .hero-content {
+    flex: 1 1 300px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button Common Styles */
+  .btn, .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Standard Buttons */
+  .btn {
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+  }
+  .btn:hover {
+    background-color: #102a5a;
+  }
+  .btn.outline {
+    background-color: transparent;
+    border: 2px solid #1e3a8a;
+    color: #1e3a8a;
+  }
+  .btn.outline:hover {
+    background-color: #1e3a8a;
+    color: #fff;
+  }
+  
+  /* Hero Image */
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.5rem;
+  }
+  
+  /* Sections */
+  section {
+    padding: 4rem 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Section Intro */
+  .section-intro {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* View Patent */
+  .view-patent {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  /* Call to Action */
+  .cta {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 4rem 2rem;
+  }
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .cta-content p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* CTA Buttons */
+  .cta-buttons {
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cta-btn.primary {
+    background-color: #fff;
+    color: #1e3a8a;
+  }
+  .cta-btn.primary:hover {
+    background-color: #e6eaf8;
+  }
+  .cta-btn.outline {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .cta-btn.outline:hover {
+    background-color: #fff;
+    color: #1e3a8a;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f1f1f1;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
