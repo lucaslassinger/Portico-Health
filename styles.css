@@ -296,13 +296,6 @@
   .team-grid {
     grid-template-columns: 1fr;
   }
-
-    .footer-fda-disclaimer {
-  font-size: 0.9rem;
-  opacity: 0.85;
-  margin-bottom: 1rem;
-}
-
     
   .team-member img {
     width: 160px;
@@ -311,4 +304,5 @@
 }
 
   
+
 
